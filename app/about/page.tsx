@@ -13,15 +13,15 @@ export default function AboutPage() {
             <Image src="/images/screenshot-202026-01-06-20at-201.png" alt="Alex Doe" fill className="object-cover" />
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">Hi, I'm Alex Doe</h1>
+            <h1 className="text-2xl font-bold text-gray-900">Hi, I'm Abdullah Musharaf</h1>
             <p className="text-gray-500">Aspiring ML Engineer & Lifelong Learner.</p>
           </div>
         </div>
         <Button
           variant="outline"
-          className="flex items-center gap-2 border-gray-200 text-gray-700 hover:bg-gray-50 bg-transparent"
+          className="flex items-center gap-2 border-gray-200 text-slate-700 hover:bg-gray-50 bg-white shadow-sm text-[13px] h-10 px-5 font-semibold"
         >
-          <Download className="w-4 h-4" />
+          <Download className="w-3.5 h-3.5" />
           Download My Resume
         </Button>
       </div>
@@ -59,41 +59,41 @@ export default function AboutPage() {
       <hr className="border-gray-100 mb-20" />
 
       <section className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Let's Get in Touch!</h2>
-        <p className="text-gray-600 mb-10">Have a question or want to work together?</p>
+        <h2 className="text-3xl font-extrabold text-slate-950 mb-3 tracking-tight">Let's Get in Touch!</h2>
+        <p className="text-slate-500 font-medium mb-12">Have a question or want to work together?</p>
 
         <form className="space-y-6 text-left">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <label htmlFor="name" className="text-sm font-semibold text-gray-900">
+            <div className="space-y-1.5">
+              <label htmlFor="name" className="text-[12px] font-bold text-slate-700 uppercase tracking-wider">
                 Name
               </label>
-              <Input id="name" placeholder="" className="h-12 border-gray-200 focus-visible:ring-blue-600" />
+              <Input id="name" placeholder="" className="h-11 border-gray-200 focus-visible:ring-slate-950 rounded-lg text-sm" />
             </div>
-            <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-semibold text-gray-900">
+            <div className="space-y-1.5">
+              <label htmlFor="email" className="text-[12px] font-bold text-slate-700 uppercase tracking-wider">
                 Email
               </label>
               <Input
                 id="email"
                 type="email"
                 placeholder=""
-                className="h-12 border-gray-200 focus-visible:ring-blue-600"
+                className="h-11 border-gray-200 focus-visible:ring-slate-950 rounded-lg text-sm"
               />
             </div>
           </div>
-          <div className="space-y-2">
-            <label htmlFor="message" className="text-sm font-semibold text-gray-900">
+          <div className="space-y-1.5">
+            <label htmlFor="message" className="text-[12px] font-bold text-slate-700 uppercase tracking-wider">
               Message
             </label>
             <Textarea
               id="message"
               placeholder=""
-              className="min-h-[150px] border-gray-200 focus-visible:ring-blue-600"
+              className="min-h-[140px] border-gray-200 focus-visible:ring-slate-950 rounded-lg text-sm"
             />
           </div>
           <div className="flex justify-center">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-10 h-12 rounded-lg font-semibold shadow-md">
+            <Button className="bg-slate-900 hover:bg-black text-white px-10 h-11 rounded-lg font-bold text-sm shadow-sm transition-all">
               Send Message
             </Button>
           </div>

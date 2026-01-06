@@ -22,7 +22,7 @@ export function Navbar() {
             <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
-            <span>ML Engineer</span>
+            <span>Abdullah Musharaf</span>
           </Link>
 
           <div className="flex items-center gap-8">
@@ -30,11 +30,10 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  pathname === link.href
-                    ? 'text-gray-900'
-                    : 'text-gray-600 hover:text-gray-900'
-                }`}
+                className={`text-sm font-medium transition-colors ${pathname === link.href
+                  ? 'text-gray-900'
+                  : 'text-gray-600 hover:text-gray-900'
+                  }`}
               >
                 {link.label}
               </Link>

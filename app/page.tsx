@@ -34,24 +34,24 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-950 mb-6 tracking-tight leading-[1.1]">
             Machine Learning Engineer & Innovator
           </h1>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl">
+          <p className="text-lg text-slate-600 mb-9 leading-relaxed max-w-2xl font-medium">
             A passionate and dedicated ML engineer with a focus on developing innovative solutions for complex problems.
             Specializing in predictive modeling and data visualization to drive impactful results.
           </p>
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
             <Button
               asChild
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-base rounded-lg h-auto shadow-md"
+              className="bg-slate-900 hover:bg-black text-white px-7 py-3 text-sm font-semibold rounded-lg h-auto shadow-sm transition-all"
             >
               <Link href="/projects">View My Projects</Link>
             </Button>
             <Button
               asChild
               variant="secondary"
-              className="bg-gray-200 hover:bg-gray-300 text-gray-900 px-8 py-6 text-base rounded-lg h-auto"
+              className="bg-gray-100 hover:bg-gray-200 text-slate-900 px-7 py-3 text-sm font-semibold rounded-lg h-auto border border-gray-200"
             >
               <Link href="https://linkedin.com">Connect on LinkedIn</Link>
             </Button>
@@ -66,29 +66,29 @@ export default function Home() {
           {featuredProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row border border-gray-100"
+              className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row border border-gray-100 group"
             >
-              <div className="w-full md:w-64 h-48 md:h-auto relative bg-gray-900 flex-shrink-0">
+              <div className="w-full md:w-60 h-44 md:h-auto relative bg-slate-900 flex-shrink-0 overflow-hidden">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   fill
-                  className="object-cover opacity-80"
+                  className="object-cover opacity-75 group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-8 flex-1 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="p-7 flex-1 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
-                  <p className="text-sm text-gray-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <h3 className="text-lg font-bold text-slate-900 mb-1.5 tracking-tight">{project.title}</h3>
+                  <p className="text-[13px] text-slate-500 mb-4 leading-relaxed max-w-md">{project.description}</p>
+                  <div className="flex flex-wrap gap-1.5">
                     {project.technologies.map((tech) => (
-                      <span key={tech} className="text-[11px] font-medium px-2 py-0.5 text-gray-500">
+                      <span key={tech} className="text-[10px] font-semibold px-2 py-0.5 bg-slate-50 text-slate-500 rounded border border-slate-100 uppercase tracking-wider">
                         {tech}
                       </span>
                     ))}
                   </div>
                 </div>
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white whitespace-nowrap shadow-sm">
+                <Button className="bg-slate-900 hover:bg-black text-white text-[13px] h-9 px-5 font-semibold whitespace-nowrap shadow-sm rounded-lg">
                   View Project
                 </Button>
               </div>

@@ -13,7 +13,7 @@ export default function ExperiencePage() {
         "Designed and implemented scalable data pipelines using Apache Spark and AWS for model training and deployment.",
         "Mentored junior engineers and established best practices for code reviews and MLOps within the team.",
       ],
-      icon: <Briefcase className="w-5 h-5 text-white" />,
+      icon: <Briefcase className="w-3.5 h-3.5 text-white" />,
     },
     {
       title: "Software Engineer",
@@ -25,7 +25,7 @@ export default function ExperiencePage() {
         "Collaborated with cross-functional teams to integrate ML models into user-facing products.",
         "Improved model inference speed by 30% through optimization and deployment on GPU instances.",
       ],
-      icon: <Briefcase className="w-5 h-5 text-white" />,
+      icon: <Briefcase className="w-3.5 h-3.5 text-white" />,
     },
     {
       title: "Data Science Intern",
@@ -36,7 +36,7 @@ export default function ExperiencePage() {
         "Conducted exploratory data analysis on large datasets to identify key trends and insights.",
         "Assisted in building a predictive model to forecast customer churn with 85% accuracy.",
       ],
-      icon: <Briefcase className="w-5 h-5 text-white" />,
+      icon: <Briefcase className="w-3.5 h-3.5 text-white" />,
     },
   ]
 
@@ -51,7 +51,7 @@ export default function ExperiencePage() {
         "Developed a novel attention mechanism for image segmentation models.",
         "Presented findings at two international academic conferences.",
       ],
-      icon: <FlaskConical className="w-5 h-5 text-white" />,
+      icon: <FlaskConical className="w-3.5 h-3.5 text-white" />,
     },
   ]
 
@@ -81,9 +81,9 @@ export default function ExperiencePage() {
   return (
     <main className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
       <div className="flex justify-between items-start mb-16">
-        <h1 className="text-4xl font-bold text-gray-900">Experience & Skills</h1>
-        <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-6 flex items-center gap-2">
-          <Download className="w-4 h-4" />
+        <h1 className="text-4xl font-extrabold text-slate-950 tracking-tight">Experience & Skills</h1>
+        <Button className="bg-slate-900 hover:bg-black text-white rounded-lg px-5 h-10 text-[13px] font-semibold flex items-center gap-2 shadow-sm">
+          <Download className="w-3.5 h-3.5" />
           Download CV
         </Button>
       </div>
@@ -93,8 +93,8 @@ export default function ExperiencePage() {
           <h2 className="text-xl font-bold text-gray-900 mb-8 uppercase tracking-wide">Work Experience</h2>
           <div className="relative border-l-2 border-gray-100 ml-3 space-y-12">
             {experiences.map((exp, idx) => (
-              <div key={idx} className="relative pl-10">
-                <div className="absolute -left-[1.35rem] top-0 w-8 h-8 rounded-full bg-blue-600 border-4 border-[#f5f5f7] flex items-center justify-center shadow-sm">
+              <div key={idx} className="relative pl-9">
+                <div className="absolute -left-[0.85rem] top-0 w-6 h-6 rounded-full bg-slate-900 border-[3px] border-white flex items-center justify-center shadow-sm">
                   {exp.icon}
                 </div>
                 <div className="mb-2">
@@ -120,8 +120,8 @@ export default function ExperiencePage() {
           <h2 className="text-xl font-bold text-gray-900 mb-8 uppercase tracking-wide">Research</h2>
           <div className="relative border-l-2 border-gray-100 ml-3 space-y-12">
             {research.map((res, idx) => (
-              <div key={idx} className="relative pl-10">
-                <div className="absolute -left-[1.35rem] top-0 w-8 h-8 rounded-full bg-blue-600 border-4 border-[#f5f5f7] flex items-center justify-center shadow-sm">
+              <div key={idx} className="relative pl-9">
+                <div className="absolute -left-[0.85rem] top-0 w-6 h-6 rounded-full bg-slate-900 border-[3px] border-white flex items-center justify-center shadow-sm">
                   {res.icon}
                 </div>
                 <div className="mb-2">
@@ -144,16 +144,16 @@ export default function ExperiencePage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-8 uppercase tracking-wide">Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-xl font-bold text-slate-950 mb-8 uppercase tracking-widest text-[11px] opacity-60">Skills</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {skillGroups.map((group, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                <h3 className="text-sm font-bold text-gray-900 mb-4">{group.title}</h3>
+              <div key={idx} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <h3 className="text-xs font-bold text-slate-900 mb-4 tracking-tight">{group.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {group.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="text-xs px-3 py-1.5 bg-blue-50 text-blue-600 font-medium rounded-full border border-blue-100"
+                      className="text-[10px] px-2.5 py-1 bg-slate-50 text-slate-600 font-semibold rounded border border-slate-100 uppercase tracking-wider"
                     >
                       {skill}
                     </span>

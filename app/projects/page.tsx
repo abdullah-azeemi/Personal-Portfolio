@@ -57,23 +57,22 @@ export default function ProjectsPage() {
 
   return (
     <main className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-      <div className="max-w-3xl mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">My Projects</h1>
-        <p className="text-lg text-gray-600">
+      <div className="max-w-3xl mb-14">
+        <h1 className="text-4xl font-extrabold text-slate-950 mb-4 tracking-tight">My Projects</h1>
+        <p className="text-lg text-slate-600 font-medium leading-relaxed">
           A selection of my work in Machine Learning. Filter by technology or domain to see what I can do.
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-3 mb-12">
+      <div className="flex flex-wrap gap-2.5 mb-14">
         {CATEGORIES.map((category) => (
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-6 py-2 rounded-lg text-sm font-medium transition-all ${
-              activeCategory === category
-                ? "bg-blue-600 text-white shadow-md"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-            }`}
+            className={`px-5 py-2 rounded-lg text-[13px] font-semibold transition-all ${activeCategory === category
+              ? "bg-slate-900 text-white shadow-sm"
+              : "bg-gray-100 text-slate-500 hover:bg-gray-200"
+              }`}
           >
             {category}
           </button>
@@ -94,15 +93,15 @@ export default function ProjectsPage() {
                 className="object-cover opacity-90"
               />
             </div>
-            <div className="p-8 flex flex-col flex-1">
-              <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+            <div className="p-7 flex flex-col flex-1">
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.15em] mb-3">
                 {project.category}
               </span>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
-              <p className="text-sm text-gray-600 mb-6 leading-relaxed flex-1">{project.description}</p>
+              <h3 className="text-xl font-bold text-slate-900 mb-2.5 tracking-tight">{project.title}</h3>
+              <p className="text-[13px] text-slate-500 mb-6 leading-relaxed flex-1">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="text-[11px] px-3 py-1 bg-blue-50 text-blue-600 rounded-full font-medium">
+                  <span key={tag} className="text-[10px] px-2.5 py-1 bg-slate-50 text-slate-600 rounded font-semibold border border-slate-100 uppercase tracking-wider">
                     {tag}
                   </span>
                 ))}
@@ -110,17 +109,17 @@ export default function ProjectsPage() {
               <div className="flex gap-3 mt-auto">
                 {project.category === "Computer Vision" || project.category === "NLP" ? (
                   <>
-                    <Button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white h-11">
+                    <Button className="flex-1 bg-slate-900 hover:bg-black text-white h-10 text-[13px] font-semibold rounded-lg shadow-sm">
                       {project.category === "NLP" ? "Case Study" : "Live Demo"}
                     </Button>
-                    <Button variant="secondary" className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-900 h-11">
+                    <Button variant="secondary" className="flex-1 bg-gray-100 hover:bg-gray-200 text-slate-900 h-10 text-[13px] font-semibold rounded-lg border border-gray-200">
                       Source Code
                     </Button>
                   </>
                 ) : (
                   <Button
                     variant="secondary"
-                    className="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 h-11 font-semibold"
+                    className="w-full bg-gray-100 hover:bg-gray-200 text-slate-900 h-10 text-[13px] font-semibold rounded-lg border border-gray-200"
                   >
                     Source Code
                   </Button>
