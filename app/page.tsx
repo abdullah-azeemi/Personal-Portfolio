@@ -5,22 +5,28 @@ import { Button } from "@/components/ui/button"
 export default function Home() {
   const featuredProjects = [
     {
-      title: "Interactive Covid-19 Data Dashboard",
-      description: "An interactive dashboard visualizing global Covid-19 data.",
-      technologies: ["Python", "Plotly", "Dash"],
-      image: "/data-visualization-dashboard-graph.jpg",
+      title: "FairPair",
+      description: "A collaboration platform where developers showcase projects, match based on skills and interests, and team up to build together.",
+      technologies: ["Next.js", "React", "TypeScript"],
+      image: "/images/fairpair.jpg",
+      github: "https://github.com/abdullah-azeemi/fairpair-app",
+      live: "https://fairpair.vercel.app/",
     },
     {
-      title: "Stock Price Prediction with LSTMs",
-      description: "A predictive model for forecasting stock market trends using LSTMs.",
-      technologies: ["Python", "TensorFlow", "Keras"],
-      image: "/stock-market-candle-chart.jpg",
+      title: "BookBoxd",
+      description: "AI-powered book platform that delivers personalized recommendations and captures real-time community reviews.",
+      technologies: ["Next.js", "AI", "AI APIs"],
+      image: "/images/bookboxd.jpg",
+      github: "https://github.com/abdullah-azeemi/BookBoxd",
+      live: "https://book-boxd.vercel.app/",
     },
     {
-      title: "Real-time Object Detection App",
-      description: "An application for detecting objects in real-time video streams.",
-      technologies: ["Python", "PyTorch", "OpenCV"],
-      image: "/city-street-object-detection-boxes.jpg",
+      title: "Plagiarism Checker",
+      description: "A trained Paraphrase Detection model designed to identify semantic equivalence between pairs of sentences.",
+      technologies: ["Python", "NLP", "Machine Learning"],
+      image: "/images/plagiarism-checker.jpg",
+      github: "https://github.com/abdullah-azeemi/Plagiarism-Checker",
+      live: "https://plagiarism-check-pro.vercel.app/",
     },
   ]
 
@@ -88,8 +94,8 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <Button className="bg-slate-900 hover:bg-black text-white text-[13px] h-9 px-5 font-semibold whitespace-nowrap shadow-sm rounded-lg">
-                  View Project
+                <Button asChild className="bg-slate-900 hover:bg-black text-white text-[13px] h-9 px-5 font-semibold whitespace-nowrap shadow-sm rounded-lg">
+                  <a href={project.live} target="_blank" rel="noopener noreferrer">View Project</a>
                 </Button>
               </div>
             </div>
