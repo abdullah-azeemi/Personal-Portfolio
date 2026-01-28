@@ -9,12 +9,10 @@ export default function AboutPage() {
     <main className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-20">
         <div className="flex items-center gap-6">
-          <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-gray-100 shadow-sm">
-            <Image src="/images/screenshot-202026-01-06-20at-201.png" alt="Alex Doe" fill className="object-cover" />
-          </div>
+          {/* Profile photo removed for time being */}
           <div>
             <h1 className="text-2xl font-bold text-gray-900">Hi, I'm Abdullah Musharaf</h1>
-            <p className="text-gray-500">Aspiring ML Engineer & Lifelong Learner.</p>
+            <p className="text-gray-500">CS student and ML enthusiast</p>
           </div>
         </div>
         <Button
@@ -28,30 +26,28 @@ export default function AboutPage() {
 
       <div className="space-y-16 mb-24">
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">My Journey into ML</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Integrating CS into the Real World</h2>
           <div className="space-y-4 text-gray-600 leading-relaxed">
             <p>
-              My fascination with machine learning began during my undergraduate studies, where I discovered its
-              potential to solve complex, real-world problems. I'm particularly interested in Natural Language
-              Processing and Computer Vision, and I've honed my skills through various academic projects and personal
-              explorations. I thrive on turning data into actionable insights and building intelligent systems that can
-              learn and adapt.
+              My journey in Computer Science is driven by a simple goal: making technology work for people in the real world.
+              As an ML enthusiast, I'm fascinated by how we can use data-driven insights to solve tangible problems—whether
+              it's optimizing a business process or predicting the outcome of a complex system.
             </p>
             <p>
-              My goal is to contribute to innovative projects that push the boundaries of AI, creating solutions that
-              are not only powerful but also ethical and beneficial to society. I'm actively seeking opportunities where
-              I can apply my skills in a collaborative and growth-oriented environment.
+              I believe that Machine Learning shouldn't just be an academic exercise. I'm passionate about building tools
+              that help engineers and decision-makers make informed, quick choices by filtering through the noise and
+              providing actionable explainability.
             </p>
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Beyond the Code</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Beyond the Code: Formula 1 & Sports ML</h2>
           <p className="text-gray-600 leading-relaxed">
-            When I'm not training models or debugging code, you can usually find me exploring the great outdoors. I'm an
-            avid hiker and amateur photographer, always looking for the next scenic trail to capture. I also enjoy
-            playing the guitar, which serves as a creative outlet and a way to unwind. I believe that a balanced life
-            fuels creativity and problem-solving, both in and out of the tech world.
+            When I'm not in front of a screen, I'm likely watching a Formula 1 race. The intersection of high-stakes engineering,
+            split-second strategy, and data is where my passion truly lies. I'm particularly interested in how Applied ML is
+            transforming sports—from predicting podium finishes to optimizing race strategy and athlete performance.
+            For me, F1 is the ultimate playground for real-world CS applications.
           </p>
         </section>
       </div>

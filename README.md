@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Abdullah Musharaf - Personal Portfolio
+
+Hi, I'm **Abdullah Musharaf**, a Computer Science student and Machine Learning enthusiast passionate about integrating CS into the real world. This repository contains the source code for my personal portfolio, showcasing my work in Full Stack Development, AI, and Machine Learning.
+
+## About Me
+
+- **CS Student**: Dedicated to building practical applications of computer science.
+- **F1 Enthusiast**: Fascinated by the data-driven engineering and strategy side of Formula 1.
+- **ML Hobbyist**: Exploring how Machine Learning can optimize decision-making and solve real-world problems.
+
+## Featured Projects
+
+- **F1 Podium Predictor**: A race outcome predictor utilizing the `FastF1` package to provide visual insights and performance explainability.
+- **FairPair**: A collaboration platform for developers to showcase projects and find partners based on skills and interests.
+- **AI Flashcards**: An intelligent learning tool that leverages AI to help users memorize and understand content effectively.
+- **Plagiarism Checker**: A trained NLP model designed to identify semantic equivalence between sentence pairs.
+
+## Tech Stack
+
+- **Frontend**: Next.js, React, TypeScript, Vanilla CSS
+- **Backend / DB**: Node.js, MongoDB, Prisma
+- **AI / ML**: Python, NLP, Machine Learning, AI APIs
+- **Design**: Modern, premium UI with smooth micro-animations
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Connect with Me
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [LinkedIn](https://www.linkedin.com/in/abdullah-musharaf-6179a6125/)
+- [GitHub](https://github.com/abdullah-azeemi)

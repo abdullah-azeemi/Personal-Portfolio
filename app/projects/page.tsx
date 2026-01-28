@@ -13,7 +13,7 @@ const PROJECTS = [
     description:
       "A collaboration platform where developers showcase projects, match based on skills and interests, and team up to build together.",
     tags: ["Next.js", "React", "TypeScript"],
-    image: "/images/fairpair.jpg",
+    image: "/images/fairpair_ss.png",
     tags_match: ["React", "Next.js", "Prisma"],
     github: "https://github.com/abdullah-azeemi/fairpair-app",
     live: "https://fairpair.vercel.app/",
@@ -25,7 +25,7 @@ const PROJECTS = [
     description:
       "A trained Paraphrase Detection model designed to identify semantic equivalence between pairs of sentences, optimized for NLP applications.",
     tags: ["Python", "NLP", "Machine Learning"],
-    image: "/images/plagiarism-checker.jpg",
+    image: "/images/plagiarism_checker_ss.png",
     tags_match: ["Python", "NLP", "Machine Learning"],
     github: "https://github.com/abdullah-azeemi/Plagiarism-Checker",
     live: "https://plagiarism-check-pro.vercel.app/",
@@ -37,7 +37,7 @@ const PROJECTS = [
     description:
       "AI-powered book platform that delivers personalized recommendations and captures real-time community reviews.",
     tags: ["Next.js", "Machine Learning", "AI APIs"],
-    image: "/images/bookboxd.jpg",
+    image: "/images/bookboxd_ss.png",
     tags_match: ["React", "Next.js", "AI", "Full Stack"],
     github: "https://github.com/abdullah-azeemi/BookBoxd",
     live: "https://book-boxd.vercel.app/",
@@ -49,7 +49,7 @@ const PROJECTS = [
     description:
       "A race outcome predictor using FastF1 package with visual insights, model predictions, and performance explainability for F1 fans.",
     tags: ["Python", "FastF1", "Data Science"],
-    image: "/images/f1-predictor.jpg",
+    image: "https://images.unsplash.com/photo-1719405524179-3efd1909b2d1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags_match: ["Python", "Machine Learning"],
     github: "https://github.com/abdullah-azeemi/F1-podium-predictor",
     predictions: [
@@ -64,7 +64,7 @@ const PROJECTS = [
     description:
       "A responsive Airbnb clone with interactive UI, search functionality, category filtering, and listing cards built with React.",
     tags: ["React", "CSS", "JavaScript"],
-    image: "/images/airbnb-clone.jpg",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
     tags_match: ["React", "Full Stack"],
     github: "https://github.com/abdullah-azeemi/Airbnb-Inspired-Application",
   },
@@ -75,7 +75,7 @@ const PROJECTS = [
     description:
       "An intelligent flashcard application that leverages AI to help users learn and memorize content more effectively.",
     tags: ["JavaScript", "AI", "Python"],
-    image: "/images/ai-flashcards.jpg",
+    image: "https://plus.unsplash.com/premium_photo-1681208068652-f3d8e1e52005?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWklMjByb2JvdCUyMGhvbGRpbmclMjBmbGFzaGNhcmRzfGVufDB8MHwwfHx8MA%3D%3D",
     tags_match: ["AI", "Full Stack"],
     github: "https://github.com/abdullah-azeemi/AI_Flashcards",
   },
@@ -86,7 +86,7 @@ const PROJECTS = [
     description:
       "A search engine implementation showcasing core DSA concepts including indexing, ranking algorithms, and efficient retrieval.",
     tags: ["C++", "DSA", "Algorithms"],
-    image: "/images/search-engine.jpg",
+    image: "https://images.unsplash.com/photo-1551288049-bbda48658a7d?q=80&w=800&auto=format&fit=crop",
     tags_match: ["C++"],
     github: "https://github.com/abdullah-azeemi/Search_Engine_DSA",
   },
@@ -97,7 +97,7 @@ const PROJECTS = [
     description:
       "A comprehensive soccer platform for tracking matches, teams, and player statistics with an intuitive interface.",
     tags: ["JavaScript", "HTML", "MongoDB"],
-    image: "/images/soccer-sphere.jpg",
+    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop",
     tags_match: ["Python", "Full Stack"],
     github: "https://github.com/abdullah-azeemi/ScoccerSphere",
   },
@@ -108,7 +108,7 @@ const PROJECTS = [
     description:
       "A Disk Operating System simulation project demonstrating core OS concepts including file systems and command processing.",
     tags: ["C++", "OS", "DSA"],
-    image: "/images/dos-project.jpg",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
     tags_match: ["C++"],
     github: "https://github.com/abdullah-azeemi/DOS_Project",
   },
@@ -119,7 +119,7 @@ const PROJECTS = [
     description:
       "Classic Gomoku (Five in a Row) game in C++ and Python. Play against AI or challenge a friend with clean, efficient code.",
     tags: ["C++", "Python", "AI"],
-    image: "/images/gomoku.jpg",
+    image: "https://images.unsplash.com/photo-1529697211160-85aa99b5ed3c?q=80&w=800&auto=format&fit=crop",
     tags_match: ["Python", "C++", "AI"],
     github: "https://github.com/abdullah-azeemi/Gomoku",
   },
@@ -173,21 +173,26 @@ export default function ProjectsPage() {
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col"
+            className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden"
           >
-            <div className="relative h-48 bg-gray-900 rounded-t-2xl overflow-hidden">
+            <div className="relative h-48 bg-gray-900 overflow-hidden">
               <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
                 fill
-                className="object-cover opacity-90"
+                className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <span className="text-white text-[10px] font-bold uppercase tracking-widest">
+                  View Details
+                </span>
+              </div>
             </div>
             <div className="p-6 flex flex-col flex-1">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.15em] mb-2">
                 {project.category}
               </span>
-              <h3 className="text-lg font-bold text-slate-900 mb-2 tracking-tight">{project.title}</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-2 tracking-tight group-hover:text-blue-600 transition-colors">{project.title}</h3>
               <p className="text-[13px] text-slate-500 mb-4 leading-relaxed flex-1">{project.description}</p>
               <div className="flex flex-wrap gap-1.5 mb-5">
                 {project.tags.map((tag) => (
@@ -207,7 +212,7 @@ export default function ProjectsPage() {
                       <ChevronDown className={`w-3.5 h-3.5 ml-1.5 transition-transform ${openDropdown === project.id ? 'rotate-180' : ''}`} />
                     </Button>
                     {openDropdown === project.id && (
-                      <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden z-10">
+                      <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden z-20 animate-in fade-in slide-in-from-top-2 duration-200">
                         {project.predictions.map((pred, idx) => (
                           <a
                             key={idx}
