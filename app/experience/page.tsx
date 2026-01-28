@@ -55,10 +55,12 @@ export default function ExperiencePage() {
   return (
     <main className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
       <div className="flex justify-between items-start mb-16">
-        <h1 className="text-4xl font-extrabold text-slate-950 tracking-tight">Experience & Skills</h1>
-        <Button className="bg-slate-900 hover:bg-black text-white rounded-lg px-5 h-10 text-[13px] font-semibold flex items-center gap-2 shadow-sm">
-          <Download className="w-3.5 h-3.5" />
-          Download CV
+        <h1 className="text-4xl font-extrabold text-slate-950 tracking-tight">Experience & Research</h1>
+        <Button asChild className="bg-slate-900 hover:bg-black text-white rounded-lg px-5 h-10 text-[13px] font-semibold flex items-center gap-2 shadow-sm">
+          <a href="https://drive.google.com/file/d/1BeajWLOupgJaF6Hh5mIaUNk2JdIrVRFJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <Download className="w-3.5 h-3.5" />
+            Download CV
+          </a>
         </Button>
       </div>
 

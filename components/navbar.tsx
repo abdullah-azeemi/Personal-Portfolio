@@ -10,7 +10,7 @@ export function Navbar() {
   const links = [
     { href: '/', label: 'Home' },
     { href: '/projects', label: 'Projects' },
-    { href: '/experience', label: 'Experience & Skills' },
+    { href: '/experience', label: 'Experience & Research' },
     { href: '/about', label: 'About Me' },
   ]
 

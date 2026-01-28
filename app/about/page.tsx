@@ -16,11 +16,14 @@ export default function AboutPage() {
           </div>
         </div>
         <Button
+          asChild
           variant="outline"
           className="flex items-center gap-2 border-gray-200 text-slate-700 hover:bg-gray-50 bg-white shadow-sm text-[13px] h-10 px-5 font-semibold"
         >
-          <Download className="w-3.5 h-3.5" />
-          Download My Resume
+          <a href="https://drive.google.com/file/d/1BeajWLOupgJaF6Hh5mIaUNk2JdIrVRFJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <Download className="w-3.5 h-3.5" />
+            Download My Resume
+          </a>
         </Button>
       </div>
 
