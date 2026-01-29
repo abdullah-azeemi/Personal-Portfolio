@@ -4,6 +4,7 @@ import Link from "next/link"
 
 export default function ExperiencePage() {
   const experiences = [
+
     {
       title: "SWE Fellow",
       company: "Headstarter.ai",
@@ -52,11 +53,22 @@ export default function ExperiencePage() {
     },
   ]
 
+  const education = [
+    {
+      degree: "BS Computer Science",
+      institution: "Information Technology University (ITU)",
+      location: "Lahore, Pakistan",
+      period: "Aug 2022 - June 2026",
+      courses: ["DSA", "Data Analysis and Statistical Modeling", "Advanced Algorithm Analysis", "CV", "NLP", "AI"],
+      icon: <Briefcase className="w-3.5 h-3.5 text-white" />,
+    },
+  ]
+
   return (
-    <main className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
-      <div className="flex justify-between items-start mb-16">
-        <h1 className="text-4xl font-extrabold text-slate-950 tracking-tight">Experience & Research</h1>
-        <Button asChild className="bg-slate-900 hover:bg-black text-white rounded-lg px-5 h-10 text-[13px] font-semibold flex items-center gap-2 shadow-sm">
+    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12 md:mb-16">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-slate-950 tracking-tight">Experience & Research</h1>
+        <Button asChild className="bg-slate-900 hover:bg-black text-white rounded-lg px-5 h-10 text-[13px] font-semibold flex items-center gap-2 shadow-sm w-full sm:w-auto justify-center">
           <a href="https://drive.google.com/file/d/1BeajWLOupgJaF6Hh5mIaUNk2JdIrVRFJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <Download className="w-3.5 h-3.5" />
             Download CV
@@ -87,6 +99,36 @@ export default function ExperiencePage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-bold text-gray-900 mb-8 uppercase tracking-wide">Education</h2>
+          <div className="relative border-l-2 border-gray-100 ml-3 space-y-12">
+            {education.map((edu, idx) => (
+              <div key={idx} className="relative pl-9">
+                <div className="absolute -left-[0.85rem] top-0 w-6 h-6 rounded-full bg-slate-900 border-[3px] border-white flex items-center justify-center shadow-sm">
+                  {edu.icon}
+                </div>
+                <div className="mb-2">
+                  <h3 className="text-lg font-bold text-gray-900">{edu.degree}</h3>
+                  <p className="text-sm text-gray-500">
+                    <span className="font-semibold">{edu.institution}</span> | {edu.location} | {edu.period}
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <span className="text-[11px] font-bold text-slate-400 uppercase tracking-widest block w-full mb-1">Relevant Courses</span>
+                  {edu.courses.map((course) => (
+                    <span
+                      key={course}
+                      className="text-[10px] px-2.5 py-1 bg-blue-50 text-blue-600 font-bold rounded border border-blue-100 uppercase tracking-wider"
+                    >
+                      {course}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

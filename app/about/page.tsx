@@ -6,19 +6,19 @@ import { Download } from "lucide-react"
 
 export default function AboutPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-20">
-        <div className="flex items-center gap-6">
+    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-6 mb-12 md:mb-20">
+        <div className="flex items-center gap-6 text-center sm:text-left">
           {/* Profile photo removed for time being */}
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">Hi, I'm Abdullah Musharaf</h1>
-            <p className="text-gray-500">CS student and ML enthusiast</p>
+            <h1 className="text-xl sm:text-2xl font-bold text-gray-900">Hi, I'm Abdullah Musharaf</h1>
+            <p className="text-gray-500 text-sm sm:text-base">CS student and ML enthusiast</p>
           </div>
         </div>
         <Button
           asChild
           variant="outline"
-          className="flex items-center gap-2 border-gray-200 text-slate-700 hover:bg-gray-50 bg-white shadow-sm text-[13px] h-10 px-5 font-semibold"
+          className="flex items-center gap-2 border-gray-200 text-slate-700 hover:bg-gray-50 bg-white shadow-sm text-[13px] h-10 px-5 font-semibold w-full sm:w-auto justify-center"
         >
           <a href="https://drive.google.com/file/d/1BeajWLOupgJaF6Hh5mIaUNk2JdIrVRFJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <Download className="w-3.5 h-3.5" />

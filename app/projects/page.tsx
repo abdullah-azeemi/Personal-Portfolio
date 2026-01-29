@@ -146,9 +146,9 @@ export default function ProjectsPage() {
     activeCategory === "All" ? PROJECTS : PROJECTS.filter((p) => p.tags_match.includes(activeCategory))
 
   return (
-    <main className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-      <div className="max-w-3xl mb-14">
-        <h1 className="text-4xl font-extrabold text-slate-950 mb-4 tracking-tight">My Projects</h1>
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div className="max-w-3xl mb-10 md:mb-14">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-slate-950 mb-4 tracking-tight">My Projects</h1>
         <p className="text-lg text-slate-600 font-medium leading-relaxed">
           A collection of my work across Full Stack Development, Machine Learning, and AI. Filter by technology or domain to explore.
         </p>

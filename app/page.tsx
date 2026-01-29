@@ -49,16 +49,16 @@ export default function Home() {
   ]
 
   return (
-    <main className="max-w-5xl mx-auto px-6 lg:px-8 py-20">
+    <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center gap-12 mb-32">
+      <section className="flex flex-col md:flex-row items-center gap-12 mb-20 md:mb-32">
         {/* Profile photo removed for time being */}
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-2xl md:text-4xl font-extrabold text-slate-950 mb-4 tracking-tight leading-[1.1] inline-block min-h-[1.1em]">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-slate-950 mb-4 tracking-tight leading-[1.1] inline-block min-h-[1.1em]">
             <span>{text}</span>
             <span className="inline-block w-[3px] h-[1em] bg-blue-600 ml-1.5 animate-pulse" style={{ verticalAlign: "middle" }}></span>
           </h1>
-          <h2 className="text-lg md:text-2xl font-bold text-slate-500 mb-6 tracking-tight leading-[1.1]">
+          <h2 className="text-base sm:text-lg md:text-2xl font-bold text-slate-500 mb-6 tracking-tight leading-[1.1]">
             CS Student & ML Enthusiast
           </h2>
           <p className="text-base text-slate-600 mb-8 leading-relaxed max-w-2xl font-medium">
