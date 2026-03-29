@@ -23,6 +23,14 @@ export default function Home() {
 
   const featuredProjects = [
     {
+      title: "Slipstream",
+      description: "An open-source Formula 1 analytics platform for qualifying telemetry, race analysis, practice insights, and ML-based race predictions.",
+      technologies: ["Next.js", "Flask", "Machine Learning", "Python"],
+      image: "/images/slipstream.png",
+      github: "https://github.com/abdullah-azeemi/Slipstream",
+      live: "https://slipstream-f1.vercel.app/",
+    },
+    {
       title: "F1 Podium Predictor",
       description: "A race outcome predictor using FastF1 package with visual insights, model predictions, and performance explainability.",
       technologies: ["Python", "FastF1", "Data Science"],

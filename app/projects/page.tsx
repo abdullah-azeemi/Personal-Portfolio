@@ -8,6 +8,18 @@ import { ExternalLink, Github, ChevronDown } from "lucide-react"
 const PROJECTS = [
   {
     id: 1,
+    title: "Slipstream",
+    category: "Full Stack",
+    description:
+      "An open-source Formula 1 analytics platform for qualifying telemetry, race analysis, practice insights, and ML-based race predictions.",
+    tags: ["Next.js", "Flask", "Machine Learning", "Python"],
+    image: "/images/slipstream.png",
+    tags_match: ["Flask", "Next.js", "Machine Learning", "Python"],
+    github: "https://github.com/abdullah-azeemi/Slipstream",
+    live: "https://slipstream-f1.vercel.app/",
+  },
+   {
+    id: 2,
     title: "FairPair",
     category: "Full Stack",
     description:
@@ -19,7 +31,7 @@ const PROJECTS = [
     live: "https://fairpair.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Plagiarism Checker",
     category: "NLP / ML",
     description:
@@ -31,7 +43,7 @@ const PROJECTS = [
     live: "https://plagiarism-check-pro.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "BookBoxd",
     category: "AI / Full Stack",
     description:
@@ -43,7 +55,7 @@ const PROJECTS = [
     live: "https://book-boxd.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "F1 Podium Predictor",
     category: "Machine Learning",
     description:
@@ -58,7 +70,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Airbnb Clone",
     category: "Frontend",
     description:
@@ -69,7 +81,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/Airbnb-Inspired-Application",
   },
   {
-    id: 6,
+    id: 7,
     title: "AI Flashcards",
     category: "AI / EdTech",
     description:
@@ -80,7 +92,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/AI_Flashcards",
   },
   {
-    id: 7,
+    id: 8,
     title: "Search Engine",
     category: "Data Structures",
     description:
@@ -91,7 +103,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/Search_Engine_DSA",
   },
   {
-    id: 8,
+    id: 9,
     title: "SoccerSphere",
     category: "Full Stack",
     description:
@@ -102,7 +114,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/ScoccerSphere",
   },
   {
-    id: 9,
+    id: 10,
     title: "DOS Simulation",
     category: "Systems",
     description:
@@ -113,7 +125,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/DOS_Project",
   },
   {
-    id: 10,
+    id: 11,
     title: "Gomoku",
     category: "Game / AI",
     description:
