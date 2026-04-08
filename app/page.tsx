@@ -86,7 +86,7 @@ export default function Home() {
               variant="secondary"
               className="bg-gray-100 hover:bg-gray-200 text-slate-900 px-7 py-3 text-sm font-semibold rounded-lg h-auto border border-gray-200"
             >
-              <Link href="https://www.linkedin.com/in/abdullah-musharaf-6179a6125/">Connect on LinkedIn</Link>
+              <Link href="https://www.linkedin.com/in/abdullah-musharaf/">Connect on LinkedIn</Link>
             </Button>
           </div>
         </div>
