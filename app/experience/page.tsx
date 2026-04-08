@@ -3,8 +3,9 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export default function ExperiencePage() {
-  const experiences = [
+  const RESUME_URL = "https://drive.google.com/file/d/1BeajWLOupgJaF6Hh5mIaUNk2JdIrVRFJ/view?usp=sharing"
 
+  const experiences = [
     {
       title: "SWE Fellow",
       company: "Headstarter.ai",
@@ -22,10 +23,20 @@ export default function ExperiencePage() {
   const publications = [
     {
       title: "The Impact of Late-Night Phone Use on Sleep and Mental Health: The Role of Behavioral Adaptation Strategies",
-      venue: "Frontiers of Information Technology (FIT)",
-      year: "2024",
-      description: "This study examines how nighttime phone use affects sleep quality and mental health among 139 participants. We found that excessive pre-sleep phone use is associated with a 65% decline in sleep quality and 70% increase in daytime fatigue, with each additional hour reducing sleep quality by 0.37 points. Importantly, structured behavioral interventions like scheduled breaks and mindfulness exercises reduced fatigue by 30%, suggesting that mindful usage patterns—not just reduced screen time—are key to improving digital wellness and sleep health.",
-      link: "https://www.researchgate.net/publication/399744760_The_Impact_of_Late-Night_Phone_Use_on_Sleep_and_Mental_Health_The_Role_of_Behavioral_Adaptation_Strategies",
+      venue: "2025 International Conference on Frontiers of Information Technology (FIT), COMSATS Secretariat, Islamabad",
+      year: "2025",
+      description:
+        "Analyzed survey data (n=139) using regression; found 65% decline in sleep quality and 0.37-point reduction per additional hour of phone use. Structured behavioral interventions showed 30% reduction in fatigue.",
+      link: "https://ieeexplore.ieee.org/abstract/document/11333606",
+      linkLabel: "View on IEEE Xplore",
+      icon: <FileText className="w-3.5 h-3.5 text-white" />,
+    },
+    {
+      title: "Biomechanical Predictors of VR Cricket Batting Performance",
+      venue: "Under Review",
+      year: "2025",
+      description:
+        "Explainable ML analysis of 87K VR cricket deliveries - three XGBoost models with SHAP interpretability. Key findings: lateral head-ball alignment as dominant contact predictor (SHAP=0.38), bat velocity as universal boundary predictor (AUC holdout drop <0.005). Includes percentile-based scouting system.",
       icon: <FileText className="w-3.5 h-3.5 text-white" />,
     },
   ]
@@ -41,15 +52,15 @@ export default function ExperiencePage() {
     },
     {
       title: "Backend & Databases",
-      skills: ["Node.js", "MongoDB", "PostgreSQL", "REST APIs"],
+      skills: ["Node.js", "MongoDB", "PostgreSQL", "Prisma", "Flask", "Docker", "REST APIs"],
     },
     {
       title: "AI / ML",
-      skills: ["FastF1", "Pandas", "NumPy", "Scikit-learn", "OpenAI API"],
+      skills: ["XGBoost", "SHAP", "HuggingFace", "FLAML", "Pandas", "NumPy", "Scikit-learn", "OpenAI API"],
     },
     {
       title: "Tools & Platforms",
-      skills: ["Git", "GitHub", "VS Code", "Vercel", "Figma"],
+      skills: ["Git", "GitHub", "VS Code", "Vercel", "Google Colab"],
     },
   ]
 
@@ -69,7 +80,7 @@ export default function ExperiencePage() {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12 md:mb-16">
         <h1 className="text-3xl md:text-4xl font-extrabold text-slate-950 tracking-tight">Experience & Research</h1>
         <Button asChild className="bg-slate-900 hover:bg-black text-white rounded-lg px-5 h-10 text-[13px] font-semibold flex items-center gap-2 shadow-sm w-full sm:w-auto justify-center">
-          <a href="https://drive.google.com/file/d/1BeajWLOupgJaF6Hh5mIaUNk2JdIrVRFJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
             <Download className="w-3.5 h-3.5" />
             Download CV
           </a>
@@ -151,15 +162,17 @@ export default function ExperiencePage() {
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">
                   {pub.description}
                 </p>
-                <Link
-                  href={pub.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  View on ResearchGate
-                </Link>
+                {pub.link && (
+                  <Link
+                    href={pub.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    {pub.linkLabel || "View Publication"}
+                  </Link>
+                )}
               </div>
             ))}
           </div>

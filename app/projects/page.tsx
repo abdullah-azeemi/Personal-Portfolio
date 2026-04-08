@@ -11,22 +11,22 @@ const PROJECTS = [
     title: "Slipstream",
     category: "Full Stack",
     description:
-      "An open-source Formula 1 analytics platform for qualifying telemetry, race analysis, practice insights, and ML-based race predictions.",
-    tags: ["Next.js", "Flask", "Machine Learning", "Python"],
+      "Open-source F1 telemetry platform with end-to-end pipelines to ingest, process, and visualize qualifying, practice, and race-session data. Features a FLAML AutoML pipeline (Extra Trees global + circuit-specific XGBoost/RF) for race outcome prediction. Gained 202 unique visitors from 29 countries in week 1, 16K+ LinkedIn impressions.",
+    tags: ["Next.js", "Flask", "Python", "PostgreSQL", "FLAML"],
     image: "/images/slipstream.png",
-    tags_match: ["Flask", "Next.js", "Machine Learning", "Python"],
+    tags_match: ["Flask", "Next.js", "Machine Learning", "Python", "PostgreSQL", "FLAML"],
     github: "https://github.com/abdullah-azeemi/Slipstream",
     live: "https://slipstream-f1.vercel.app/",
   },
-   {
+  {
     id: 2,
     title: "FairPair",
     category: "Full Stack",
     description:
-      "A collaboration platform where developers showcase projects, match based on skills and interests, and team up to build together.",
-    tags: ["Next.js", "React", "TypeScript"],
+      "Skill-based collaboration platform where developers post projects and match based on interests. Built with Prisma + PostgreSQL for scalable backend, user profiles, and real-time project listings.",
+    tags: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
     image: "/images/fairpair_ss.png",
-    tags_match: ["React", "Next.js", "Prisma"],
+    tags_match: ["React", "Next.js", "Prisma", "PostgreSQL", "TypeScript", "Full Stack"],
     github: "https://github.com/abdullah-azeemi/fairpair-app",
     live: "https://fairpair.vercel.app/",
   },
@@ -35,10 +35,10 @@ const PROJECTS = [
     title: "Plagiarism Checker",
     category: "NLP / ML",
     description:
-      "A trained Paraphrase Detection model designed to identify semantic equivalence between pairs of sentences, optimized for NLP applications.",
-    tags: ["Python", "NLP", "Machine Learning"],
+      "Distilled BERT model for semantic paraphrase detection achieving F1 = 0.81. Deployed via Flask REST API with a Next.js frontend and optimized inference latency.",
+    tags: ["Python", "BERT", "Flask", "Next.js"],
     image: "/images/plagiarism_checker_ss.png",
-    tags_match: ["Python", "NLP", "Machine Learning"],
+    tags_match: ["Python", "NLP", "Machine Learning", "BERT", "Flask", "Next.js"],
     github: "https://github.com/abdullah-azeemi/Plagiarism-Checker",
     live: "https://plagiarism-check-pro.vercel.app/",
   },
@@ -47,30 +47,15 @@ const PROJECTS = [
     title: "BookBoxd",
     category: "AI / Full Stack",
     description:
-      "AI-powered book platform that delivers personalized recommendations and captures real-time community reviews.",
-    tags: ["Next.js", "Machine Learning", "AI APIs"],
+      "Full-stack book discovery platform with Clerk authentication, Hugging Face-based personalized recommendations, external book APIs, and real-time community reviews and ratings.",
+    tags: ["Next.js", "React", "Hugging Face", "Clerk"],
     image: "/images/bookboxd_ss.png",
-    tags_match: ["React", "Next.js", "AI", "Full Stack"],
+    tags_match: ["React", "Next.js", "AI", "Full Stack", "Hugging Face", "Clerk"],
     github: "https://github.com/abdullah-azeemi/BookBoxd",
     live: "https://book-boxd.vercel.app/",
   },
   {
     id: 5,
-    title: "F1 Podium Predictor",
-    category: "Machine Learning",
-    description:
-      "A race outcome predictor using FastF1 package with visual insights, model predictions, and performance explainability for F1 fans.",
-    tags: ["Python", "FastF1", "Data Science"],
-    image: "https://images.unsplash.com/photo-1719405524179-3efd1909b2d1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags_match: ["Python", "Machine Learning"],
-    github: "https://github.com/abdullah-azeemi/F1-podium-predictor",
-    predictions: [
-      { label: "Monza 2025", url: "https://www.linkedin.com/posts/abdullah-musharaf-6179a6125_ai-vs-monza-can-ferrari-finally-taste-victory-activity-7370418459379318784-PzMQ" },
-      { label: "Hungary 2025", url: "https://www.linkedin.com/posts/abdullah-musharaf-6179a6125_can-ai-predict-the-2025-hungarian-gp-podium-activity-7357710432465207296-2x02" },
-    ],
-  },
-  {
-    id: 6,
     title: "Airbnb Clone",
     category: "Frontend",
     description:
@@ -81,7 +66,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/Airbnb-Inspired-Application",
   },
   {
-    id: 7,
+    id: 6,
     title: "AI Flashcards",
     category: "AI / EdTech",
     description:
@@ -92,29 +77,29 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/AI_Flashcards",
   },
   {
-    id: 8,
+    id: 7,
     title: "Search Engine",
     category: "Data Structures",
     description:
-      "A search engine implementation showcasing core DSA concepts including indexing, ranking algorithms, and efficient retrieval.",
+      "A search engine implementation showcasing core DSA concepts including indexing, ranking algorithms, and efficient retrieval. Implements inverted indexing, TF-IDF ranking, and query processing in C++ from scratch.",
     tags: ["C++", "DSA", "Algorithms"],
     image: "https://images.unsplash.com/photo-1551288049-bbda48658a7d?q=80&w=800&auto=format&fit=crop",
     tags_match: ["C++"],
     github: "https://github.com/abdullah-azeemi/Search_Engine_DSA",
   },
   {
-    id: 9,
+    id: 8,
     title: "SoccerSphere",
     category: "Full Stack",
     description:
       "A comprehensive soccer platform for tracking matches, teams, and player statistics with an intuitive interface.",
     tags: ["JavaScript", "HTML", "MongoDB"],
     image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop",
-    tags_match: ["Python", "Full Stack"],
+    tags_match: ["JavaScript", "MongoDB", "Full Stack"],
     github: "https://github.com/abdullah-azeemi/ScoccerSphere",
   },
   {
-    id: 10,
+    id: 9,
     title: "DOS Simulation",
     category: "Systems",
     description:
@@ -123,6 +108,27 @@ const PROJECTS = [
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
     tags_match: ["C++"],
     github: "https://github.com/abdullah-azeemi/DOS_Project",
+  },
+  {
+    id: 10,
+    title: "F1 Podium Predictor",
+    category: "Machine Learning",
+    description:
+      "A race outcome predictor using FastF1 package with visual insights, model predictions, and performance explainability for F1 fans.",
+    tags: ["Python", "FastF1", "Data Science"],
+    image: "https://images.unsplash.com/photo-1719405524179-3efd1909b2d1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    tags_match: ["Python", "Machine Learning"],
+    github: "https://github.com/abdullah-azeemi/F1-podium-predictor",
+    predictions: [
+      {
+        label: "Monza 2025",
+        url: "https://www.linkedin.com/posts/abdullah-musharaf-6179a6125_ai-vs-monza-can-ferrari-finally-taste-victory-activity-7370418459379318784-PzMQ",
+      },
+      {
+        label: "Hungary 2025",
+        url: "https://www.linkedin.com/posts/abdullah-musharaf-6179a6125_can-ai-predict-the-2025-hungarian-gp-podium-activity-7357710432465207296-2x02",
+      },
+    ],
   },
   {
     id: 11,

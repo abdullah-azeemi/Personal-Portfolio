@@ -24,32 +24,36 @@ export default function Home() {
   const featuredProjects = [
     {
       title: "Slipstream",
-      description: "An open-source Formula 1 analytics platform for qualifying telemetry, race analysis, practice insights, and ML-based race predictions.",
-      technologies: ["Next.js", "Flask", "Machine Learning", "Python"],
+      description:
+        "Open-source F1 telemetry platform with end-to-end pipelines to ingest, process, and visualize qualifying, practice, and race-session data. Features a FLAML AutoML pipeline (Extra Trees global + circuit-specific XGBoost/RF) for race outcome prediction. Gained 202 unique visitors from 29 countries in week 1, 16K+ LinkedIn impressions.",
+      technologies: ["Next.js", "Flask", "Python", "PostgreSQL", "FLAML", "AutoML"],
       image: "/images/slipstream.png",
       github: "https://github.com/abdullah-azeemi/Slipstream",
       live: "https://slipstream-f1.vercel.app/",
     },
     {
-      title: "F1 Podium Predictor",
-      description: "A race outcome predictor using FastF1 package with visual insights, model predictions, and performance explainability.",
-      technologies: ["Python", "FastF1", "Data Science"],
-      image: "https://images.unsplash.com/photo-1719405524179-3efd1909b2d1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      github: "https://github.com/abdullah-azeemi/F1-podium-predictor",
-      live: "https://github.com/abdullah-azeemi/F1-podium-predictor",
+      title: "BookBoxd",
+      description:
+        "Full-stack book discovery platform with Clerk authentication, Hugging Face-based personalized recommendations, external book APIs, and real-time community reviews and ratings.",
+      technologies: ["Next.js", "React", "Hugging Face", "Clerk"],
+      image: "/images/bookboxd_ss.png",
+      github: "https://github.com/abdullah-azeemi/BookBoxd",
+      live: "https://book-boxd.vercel.app/",
     },
     {
       title: "FairPair",
-      description: "A collaboration platform where developers showcase projects, match based on skills and interests, and team up to build together.",
-      technologies: ["Next.js", "React", "TypeScript"],
+      description:
+        "Skill-based collaboration platform where developers post projects and match based on interests. Built with Prisma + PostgreSQL for scalable backend, user profiles, and real-time project listings.",
+      technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
       image: "/images/fairpair_ss.png",
       github: "https://github.com/abdullah-azeemi/fairpair-app",
       live: "https://fairpair.vercel.app/",
     },
     {
       title: "Plagiarism Checker",
-      description: "A trained Paraphrase Detection model designed to identify semantic equivalence between pairs of sentences.",
-      technologies: ["Python", "NLP", "Machine Learning"],
+      description:
+        "Distilled BERT model for semantic paraphrase detection achieving F1 = 0.81. Deployed via Flask REST API with a Next.js frontend and optimized inference latency.",
+      technologies: ["Python", "BERT", "Flask", "Next.js"],
       image: "/images/plagiarism_checker_ss.png",
       github: "https://github.com/abdullah-azeemi/Plagiarism-Checker",
       live: "https://plagiarism-check-pro.vercel.app/",

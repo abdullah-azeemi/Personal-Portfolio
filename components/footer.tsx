@@ -19,7 +19,7 @@ export function Footer() {
               <Github className="w-5 h-5" />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/abdullah-musharaf-6179a6125/"
+              href="https://www.linkedin.com/in/abdullah-musharaf/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900 transition-colors"

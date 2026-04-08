@@ -8,8 +8,13 @@ import { Footer } from '@/components/footer'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Abdullah Musharaf Portfolio',
-  description: 'Portfolio of a Machine Learning Engineer & Innovator',
+  title: "Abdullah Musharaf — Full Stack Engineer & ML Researcher",
+  description: "Abdullah Musharaf — Full Stack Engineer & ML Researcher",
+  openGraph: {
+    title: "Abdullah Musharaf — Full Stack Engineer & ML Researcher",
+    description: "Abdullah Musharaf — Full Stack Engineer & ML Researcher",
+    type: "website",
+  },
   generator: 'v0.app',
   icons: {
     icon: [
