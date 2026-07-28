@@ -20,15 +20,13 @@ const PROJECTS = [
   },
   {
     id: 2,
-    title: "FairPair",
-    category: "Full Stack",
+    title: "CricketMind",
+    category: "AI / Full Stack",
     description:
-      "Skill-based collaboration platform where developers post projects and match based on interests. Built with Prisma + PostgreSQL for scalable backend, user profiles, and real-time project listings.",
-    tags: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
-    image: "/images/fairpair_ss.png",
-    tags_match: ["React", "Next.js", "Prisma", "PostgreSQL", "TypeScript", "Full Stack"],
-    github: "https://github.com/abdullah-azeemi/fairpair-app",
-    live: "https://fairpair.vercel.app/",
+      "AI-powered cricket analytics platform built around a multi-agent system, a coaching agent and a data orchestration agent that queries a live cricket database, interprets results, and generates natural-language explanations for coaches. Architected real-time data ingestion pipelines and orchestrated ML workflows using MLflow and Dagster, with agents coordinating autonomously to surface actionable performance insights.",
+    tags: ["LLM Agents", "Python", "MLflow", "Dagster", "Data Orchestration"],
+    image: "/images/cricketmind.png",
+    tags_match: ["LLM Agents", "Multi-Agent Systems", "Python", "MLflow", "Dagster", "Data Orchestration", "Machine Learning"],
   },
   {
     id: 3,
@@ -44,6 +42,18 @@ const PROJECTS = [
   },
   {
     id: 4,
+    title: "FairPair",
+    category: "Full Stack",
+    description:
+      "Skill-based collaboration platform where developers post projects and match based on interests. Built with Prisma + PostgreSQL for scalable backend, user profiles, and real-time project listings.",
+    tags: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
+    image: "/images/fairpair_ss.png",
+    tags_match: ["React", "Next.js", "Prisma", "PostgreSQL", "TypeScript", "Full Stack"],
+    github: "https://github.com/abdullah-azeemi/fairpair-app",
+    live: "https://fairpair.vercel.app/",
+  },
+  {
+    id: 5,
     title: "BookBoxd",
     category: "AI / Full Stack",
     description:
@@ -55,7 +65,7 @@ const PROJECTS = [
     live: "https://book-boxd.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Airbnb Clone",
     category: "Frontend",
     description:
@@ -66,7 +76,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/Airbnb-Inspired-Application",
   },
   {
-    id: 6,
+    id: 7,
     title: "AI Flashcards",
     category: "AI / EdTech",
     description:
@@ -77,7 +87,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/AI_Flashcards",
   },
   {
-    id: 7,
+    id: 8,
     title: "Search Engine",
     category: "Data Structures",
     description:
@@ -88,7 +98,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/Search_Engine_DSA",
   },
   {
-    id: 8,
+    id: 9,
     title: "SoccerSphere",
     category: "Full Stack",
     description:
@@ -99,7 +109,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/ScoccerSphere",
   },
   {
-    id: 9,
+    id: 10,
     title: "DOS Simulation",
     category: "Systems",
     description:
@@ -110,7 +120,7 @@ const PROJECTS = [
     github: "https://github.com/abdullah-azeemi/DOS_Project",
   },
   {
-    id: 10,
+    id: 11,
     title: "F1 Podium Predictor",
     category: "Machine Learning",
     description:
@@ -131,7 +141,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     title: "Gomoku",
     category: "Game / AI",
     description:
