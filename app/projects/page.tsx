@@ -25,7 +25,7 @@ const PROJECTS = [
     description:
       "AI-powered cricket analytics platform built around a multi-agent system, a coaching agent and a data orchestration agent that queries a live cricket database, interprets results, and generates natural-language explanations for coaches. Architected real-time data ingestion pipelines and orchestrated ML workflows using MLflow and Dagster, with agents coordinating autonomously to surface actionable performance insights.",
     tags: ["LLM Agents", "Python", "MLflow", "Dagster", "Data Orchestration"],
-    image: "/images/cricketmind.png",
+    image: "/images/cricketMind.png",
     tags_match: ["LLM Agents", "Multi-Agent Systems", "Python", "MLflow", "Dagster", "Data Orchestration", "Machine Learning"],
   },
   {

@@ -6,6 +6,17 @@ export default function ExperiencePage() {
   const RESUME_URL = "https://drive.google.com/file/d/1BeajWLOupgJaF6Hh5mIaUNk2JdIrVRFJ/view?usp=sharing"
 
   const experiences = [
+     {
+      title: "Research Lead",
+      company: "CAAISC",
+      location: "Onsite",
+      period: "August 2025 - June 2026",
+      description: [
+        "Engineered end-to-end data pipelines for preprocessing and feature engineering on 200K+ VR cricket deliveries from 725 players; led experimentation and validation on held-out players.",
+        "Trained explainable XGBoost/SHAP models across three prediction phases (contact, boundary, dismissal), validated on held-out players to prevent overfitting to individual batting styles.",
+      ],
+      icon: <Briefcase className="w-3.5 h-3.5 text-white" />,
+    },
     {
       title: "SWE Fellow",
       company: "Headstarter.ai",
@@ -29,14 +40,6 @@ export default function ExperiencePage() {
         "Analyzed survey data (n=139) using regression; found 65% decline in sleep quality and 0.37-point reduction per additional hour of phone use. Structured behavioral interventions showed 30% reduction in fatigue.",
       link: "https://ieeexplore.ieee.org/abstract/document/11333606",
       linkLabel: "View on IEEE Xplore",
-      icon: <FileText className="w-3.5 h-3.5 text-white" />,
-    },
-    {
-      title: "Biomechanical Predictors of VR Cricket Batting Performance",
-      venue: "Under Review",
-      year: "2025",
-      description:
-        "Explainable ML analysis of 87K VR cricket deliveries - three XGBoost models with SHAP interpretability. Key findings: lateral head-ball alignment as dominant contact predictor (SHAP=0.38), bat velocity as universal boundary predictor (AUC holdout drop <0.005). Includes percentile-based scouting system.",
       icon: <FileText className="w-3.5 h-3.5 text-white" />,
     },
   ]
@@ -65,6 +68,14 @@ export default function ExperiencePage() {
   ]
 
   const education = [
+    {
+      degree: "MS Artificial Intelligence",
+      institution: "Lahore University of Management Sciences",
+      location: "Lahore, Pakistan",
+      period: "Aug 2026 - Current",
+      courses: [],
+      icon: <Briefcase className="w-3.5 h-3.5 text-white" />,
+    },
     {
       degree: "BS Computer Science",
       institution: "Information Technology University (ITU)",
